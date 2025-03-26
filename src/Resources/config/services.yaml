@@ -28,7 +28,7 @@ services:
             
     Spinbits\SyliusGoogleAnalytics4Plugin\Factory\ItemFactory:
         arguments:
-            $productVariantResolver: '@sylius.product_variant_resolver.default'
+            $productVariantResolver: '@Sylius\Component\Product\Resolver\ProductVariantResolverInterface'
             
     Spinbits\SyliusGoogleAnalytics4Plugin\Factory\EventsBagSessionFactory:
         decorates: session.factory
